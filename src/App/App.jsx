@@ -4,6 +4,7 @@ import ColorLabel from "../ColorLabel/ColorLabel";
 import Toggle from "../Toggle/Toggle";
 import BoxSection from "../BoxSection/BoxSection";
 import Add from "../Add/Add";
+import Subtract from "../Subtract/Subtract";
 
 function App() {
   const [toggle, setToggle] = useState(true);
@@ -20,6 +21,8 @@ function App() {
         <Toggle update={updateToggle} />
 
         <Add updateincrement={updateIncrement} count={increment} />
+
+        <Subtract />
 
         <BoxSection toggle={toggle} />
       </div>
