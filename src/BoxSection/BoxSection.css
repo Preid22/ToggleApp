@@ -1,0 +1,7 @@
+.boxsection {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 400px;
+ 
+}

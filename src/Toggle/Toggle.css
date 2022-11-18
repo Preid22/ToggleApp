@@ -1,0 +1,22 @@
+.toggler {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 3px solid;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px 1px;
+}
+
+.toggler:hover {
+    height: 42px;
+    width: 42px;
+    border: 4px solid;
+}
+
+.toggler:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 7px 1px;
+}

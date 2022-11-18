@@ -1,0 +1,15 @@
+
+.colorbox {
+    margin: auto;
+   display: flex;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items:flex-end;
+    background-color: green;
+}
+
+
+
