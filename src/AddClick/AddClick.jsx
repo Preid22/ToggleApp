@@ -1,10 +1,10 @@
 import React from "react";
 import "./AddClick.css"
 
-function AddClick ({ newsquare }) {
+function AddClick ({ updateincrement, count }) {
     return (
-        <div className="addclick" onClick={newsquare}>
-            +
+        <div className="addclick" onClick={updateincrement}>
+            {count}
         </div>
     );
 }

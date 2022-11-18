@@ -9,8 +9,8 @@ function App() {
   const [toggle, setToggle] = useState(true);
   const updateToggle = () => setToggle(!toggle);
 
-  const [newSquare, setNewSquare] = useState(0);
-  const updateSquare = () => setNewSquare(newSquare+1)
+  const [increment, setIncrement] = useState(0);
+  const updateIncrement = () => setIncrement(increment+1)
 
   return (
     <div className="page">
@@ -19,8 +19,8 @@ function App() {
 
         <Toggle update={updateToggle} />
 
-        <AddClick newsquare={updateSquare}
-                  count={newSquare} />
+        <AddClick updateincrement={updateIncrement}
+                  count={increment} />
 
         <BoxSection toggle={toggle} />
       </div>
