@@ -7,7 +7,7 @@ function Subtract({ items, setFunc }) {
     className="add"
     type="button"
     onClick={() => {
-      setFunc(items - 1);
+      setFunc([...items, items.slice(items.length)]);
     }}
   >
     -

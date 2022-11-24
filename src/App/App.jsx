@@ -9,7 +9,7 @@ import { useTransition } from "react";
 import ColorBox from "../ColorBox/ColorBox";
 
 function App() {
-  const [items, setItems] = useState(0);
+  const [items, setItems] = useState([]);
 
   const [toggle, setToggle] = useState(true);
   const updateToggle = () => setToggle(!toggle);
