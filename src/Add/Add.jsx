@@ -1,11 +1,17 @@
 import React from "react";
 import "./Add.css";
 
-function Add({ updateincrement, count }) {
+function Add({ items, setFunc }) {
   return (
-    <div className="add" onClick={updateincrement}>
-      {count}
-    </div>
+    <button
+      className="add"
+      type="button"
+      onClick={() => {
+        setFunc(items + 1);
+      }}
+    >
+      +
+    </button>
   );
 }
 

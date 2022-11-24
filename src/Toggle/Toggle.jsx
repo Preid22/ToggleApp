@@ -2,9 +2,10 @@ import React from "react";
 import "./Toggle.css";
 import ColorLabel from "../ColorLabel/ColorLabel";
 
-function Toggle({ update, toggle }) {
+function Toggle({ update, items }) {
   return (
     <div className="toggler" onClick={update}>
+      {items}
     </div>
   );
 }
