@@ -3,24 +3,27 @@ import "./App.css";
 import ColorLabel from "../ColorLabel/ColorLabel";
 import Toggle from "../Toggle/Toggle";
 import BoxSection from "../BoxSection/BoxSection";
-import AddClick from "../AddClick/AddClick";
+import Add from "../Add/Add";
+import Subtract from "../Subtract/Subtract";
+import { useTransition } from "react";
+import ColorBox from "../ColorBox/ColorBox";
 
 function App() {
+  const [items, setItems] = useState(0);
+
   const [toggle, setToggle] = useState(true);
   const updateToggle = () => setToggle(!toggle);
-
-  const [newSquare, setNewSquare] = useState(0);
-  const updateSquare = () => setNewSquare(newSquare+1)
 
   return (
     <div className="page">
       <div className="app">
         <ColorLabel toggle={toggle} />
 
-        <Toggle update={updateToggle} />
+        <Toggle items={items} update={updateToggle} />
 
-        <AddClick newsquare={updateSquare}
-                  count={newSquare} />
+        <Add items={items} setFunc={setItems} />
+
+        <Subtract items={items} setFunc={setItems} />
 
         <BoxSection toggle={toggle} />
       </div>
