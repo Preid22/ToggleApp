@@ -5,7 +5,7 @@ import ColorLabel from "../ColorLabel/ColorLabel";
 function Toggle({ update, items }) {
   return (
     <div className="toggler" onClick={update}>
-      {items}
+      {items.length}
     </div>
   );
 }

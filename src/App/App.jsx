@@ -25,7 +25,7 @@ function App() {
 
         <Subtract items={items} setFunc={setItems} />
 
-        <BoxSection toggle={toggle} />
+        <BoxSection toggle={toggle} items={items} />
       </div>
     </div>
   );
